@@ -42,9 +42,10 @@ Requisito 07
 */
 #endregion
 
+bool exit = false;
 
-while (true)
-{
+while (!exit)
+{   
     Console.Clear();
     Console.WriteLine("Bem Vinda Mariana");
 
@@ -97,7 +98,7 @@ while (true)
     int resposta = Convert.ToInt16(Console.ReadLine());
 
     if (resposta == 2)
-        break;
+        exit = true;
 }
 
 
